@@ -28,7 +28,7 @@ Cada tópico possui:
 - termos PT/EN;
 - IDs estáveis de aula/tópico/prática.
 
-A matriz em `CHAPTER_01_COVERAGE.md` registra conceitos atômicos e seus destinos.
+As matrizes `CHAPTER_01_COVERAGE.md` e `CHAPTER_02_COVERAGE.md` registram conceitos atômicos e seus destinos. Novos capítulos devem seguir a mesma regra.
 
 ## Conteúdo complementar
 
@@ -58,3 +58,12 @@ Laboratórios devem usar VMs de teste, arquivos próprios, dados sintéticos ou 
 - evidências sintéticas em blocos monoespaçados;
 - navegação capítulo → unidade → aula → tópico;
 - progresso local sem exigir backend.
+
+
+## Referências cruzadas entre capítulos
+
+Quando um capítulo retoma um conceito anterior, a aula deve sinalizar a continuidade e aprofundar o assunto em vez de duplicar material. Exemplos atuais: segmentação e hashing aparecem no Capítulo 1 e são retomados no Capítulo 2 em contexto arquitetural e de proteção de dados.
+
+## Uso proporcional de elementos do livro
+
+Termos técnicos, nomes de componentes, tabelas factuais pequenas e a ordem conceitual podem ser preservados quando isso melhora compreensão (por exemplo, root keys do Registry, níveis de logging e papéis de OAuth/PKI). O texto explicativo, exemplos, exercícios, diagramas e questões permanecem autorais e em português brasileiro.

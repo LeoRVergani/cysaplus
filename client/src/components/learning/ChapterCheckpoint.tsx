@@ -37,7 +37,7 @@ export function ChapterCheckpoint({ path, reviewedCardIds, onReviewCard, onQuest
 
   return <section className="chapter-checkpoint">
     <button className="back-control" onClick={onBack}><ChevronLeft size={16} /> Voltar à aula</button>
-    <header className="checkpoint-hero"><span>CHECKPOINT DO CAPÍTULO 1</span><h2>{path.checkpoint.title}</h2><p>Recupere a lógica do capítulo antes de tentar memorizar definições isoladas.</p></header>
+    <header className="checkpoint-hero"><span>CHECKPOINT DO CAPÍTULO {path.chapterNumber}</span><h2>{path.checkpoint.title}</h2><p>Recupere a lógica do capítulo antes de tentar memorizar definições isoladas.</p></header>
     <section className="checkpoint-summary"><div><p className="eyebrow">SÍNTESE OPERACIONAL</p><h3>O que deve permanecer no radar</h3></div><ol>{path.checkpoint.summary.map((item, index) => <li key={item}><b>0{index + 1}</b><span>{item}</span></li>)}</ol></section>
     {path.visuals.find((visual) => visual.id === "v-chapter-map") && <section className="checkpoint-map"><LearningVisual visual={path.visuals.find((visual) => visual.id === "v-chapter-map")!} /></section>}
     <section className="checkpoint-grid">

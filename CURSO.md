@@ -13,7 +13,29 @@ O **Capítulo 1 — O Analista de Cibersegurança de Hoje** possui uma rota pró
 
 A progressão foi desenhada como **iniciante → técnico → cenário → visão de SOC → CySA+ → prática → revisão**. Todas as 47 aulas possuem ao menos uma prática, uma questão e um flashcard associado. O conteúdo cobre CIA Triad, privacidade/GAPP, avaliação de risco, NAC/802.1X/RADIUS, firewalls/DMZ/segmentação, endpoint, pentest, reverse engineering e eficiência/automação/SOAR.
 
-A matriz completa está em `docs/spec/CHAPTER_01_COVERAGE.md`. Os demais capítulos permanecem pendentes para etapas futuras.
+A matriz completa está em `docs/spec/CHAPTER_01_COVERAGE.md`.
+
+## Capítulo 2 — implementação aprofundada
+
+O **Capítulo 2 — Arquitetura de Sistemas e Redes** foi integrado ao mesmo Atlas de aprendizagem do Capítulo 1: **7 unidades, 47 aulas, 47 tópicos, 221 conceitos atômicos rastreados, 47 práticas, 53 questões autorais, 70 flashcards, 6 laboratórios seguros e 26 visuais originais**.
+
+A trilha percorre **serverless/FaaS, virtualização e containers; hardening, Windows Registry, arquivos de configuração e processos; NTP, níveis de logging e ingestão; arquitetura on-premises/cloud/hybrid, segmentação, SDN, Zero Trust e SASE; IAM, MFA, passwordless e SSO; federação, SAML, AD FS, OAuth/OpenID Connect, PAM/CASB; PKI, CRL, TLS inspection, DLP, PII e CHD**.
+
+O Capítulo 2 retoma assuntos do Capítulo 1 somente quando precisa aprofundá-los. A cobertura rastreável está em `docs/spec/CHAPTER_02_COVERAGE.md`. **O Capítulo 3 não foi iniciado.**
+
+### Estado agregado dos capítulos aprofundados
+
+| Métrica | Capítulo 1 | Capítulo 2 | Total |
+| --- | ---: | ---: | ---: |
+| Unidades | 7 | 7 | 14 |
+| Aulas | 47 | 47 | 94 |
+| Tópicos | 48 | 47 | 95 |
+| Conceitos rastreados | 225 | 221 | 446 |
+| Práticas | 48 | 47 | 95 |
+| Questões autorais | 53 | 53 | 106 |
+| Flashcards | 78 | 70 | 148 |
+| Laboratórios | 6 | 6 | 12 |
+| Visuais | 18 | 26 | 44 |
 
 ## Roteiro sugerido de seis semanas
 

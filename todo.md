@@ -53,3 +53,21 @@
 - [ ] Executar `pnpm check` e `pnpm build` completos quando as dependências do projeto estiverem disponíveis; o ambiente atual não possui a árvore de dependências completa e o acesso ao npm registry falhou com `EAI_AGAIN`.
 - [x] Validar sintaxe TS/TSX, imports locais, CSS e integridade dos dados do Capítulo 1 por verificações independentes do build.
 - [ ] Iniciar Capítulo 2 somente após avaliação do Capítulo 1.
+
+## Capítulo 2 — System and Network Architecture
+
+- [x] Ler integralmente o intervalo do Chapter 2 no PDF (páginas PDF 81–120) e confirmar o início do Chapter 3 na página PDF 121.
+- [x] Criar `docs/spec/CHAPTER_02_COVERAGE.md` com cobertura atômica PDF → unidade → aula → tópico → prática → questão.
+- [x] Integrar 7 unidades e 47 aulas aprofundadas sem alterar os IDs/progresso do Capítulo 1.
+- [x] Cobrir infrastructure/serverless/virtualization/containerization.
+- [x] Cobrir OS hardening, CIS benchmark, Windows Registry, configurações, processos e arquitetura x86/ARM.
+- [x] Cobrir log ingestion, NTP, logging levels 0–7 e boas práticas de logging.
+- [x] Cobrir on-premises/cloud/hybrid, segmentation/air gap/VLAN, VPN, product diversity, SDN/SD-WAN, Zero Trust e SASE.
+- [x] Cobrir IAM/AAA, MFA, passwordless, SSO e shared authentication.
+- [x] Cobrir federation/IDP/RP-SP, SAML, AD FS, OAuth, OpenID Connect, PAM e CASB.
+- [x] Cobrir encryption/key management, PKI/CSR/CRL, TLS inspection, DLP, PII e CHD.
+- [x] Criar práticas, PBQs, questões autorais com justificativas individuais, flashcards, labs e visuais próprios.
+- [x] Atualizar glossário, specs, documentação e service worker/PWA para a nova entrega.
+- [x] Validar TypeScript isolado do domínio de aprendizagem, relacionamentos, IDs, imports locais e sintaxe.
+- [ ] Executar `pnpm check` e `pnpm build:pages` completos em ambiente com dependências instaladas. Bloqueado nesta execução por indisponibilidade de `registry.npmjs.org`; não é tratado como aprovado.
+- [x] Não iniciar o Capítulo 3 nesta entrega.

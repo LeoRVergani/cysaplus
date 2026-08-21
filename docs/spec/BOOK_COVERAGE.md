@@ -5,7 +5,7 @@ Fonte: **CompTIA CySA+ Study Guide — Exam CS0-003 — Third Edition**.
 | Capítulo | Status | Observação |
 |---|---|---|
 | 1 — Today's Cybersecurity Analyst | **CONTEÚDO VALIDADO** | 47 aulas, 225 conceitos rastreados, 48 práticas, 53 questões, 78 flashcards, 6 labs e 18 visuais. Ver `CHAPTER_01_COVERAGE.md`. |
-| 2 — System and Network Architecture | PENDENTE | Não iniciado nesta entrega. |
+| 2 — System and Network Architecture | **CONTEÚDO VALIDADO** | 47 aulas, 221 conceitos rastreados, 47 práticas, 53 questões, 70 flashcards, 6 labs e 26 visuais. Ver `CHAPTER_02_COVERAGE.md`. |
 | 3 — Malicious Activity | PENDENTE | Não iniciado nesta entrega. |
 | 4 — Threat Intelligence | PENDENTE | Não iniciado nesta entrega. |
 | 5 — Reconnaissance and Intelligence Gathering | PENDENTE | Não iniciado nesta entrega. |

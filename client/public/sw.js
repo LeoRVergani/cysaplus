@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "cysa-study-br";
-const CACHE_VERSION = "2026-08-21-1";
+const CACHE_VERSION = "2026-08-21-2";
 const CACHE_NAME = `${CACHE_PREFIX}-${CACHE_VERSION}`;
 const APP_SHELL = [
   "/",
