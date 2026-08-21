@@ -1,0 +1,14 @@
+/**
+ * Atlas de Incidentes — reforços de rota, setor e assinatura de marca.
+ * Cada sinal cartográfico representa contexto operacional: localização, percurso, evidência ou prioridade.
+ */
+
+.brand-coordinate { display: block; margin-top: 7px; color: #94a79e; font: 500 8px var(--mono); letter-spacing: .07em; }.sidebar-brand { position: relative; }.sidebar-brand::after { position: absolute; right: 4px; bottom: 18px; width: 30px; height: 13px; border-top: 1px dashed rgba(199,243,107,.44); border-right: 1px dashed rgba(199,243,107,.44); content: ""; }
+
+.study-route { position: relative; }.study-route::before { position: absolute; top: 20px; bottom: 21px; left: 17px; border-left: 1px dashed #c2d3c3; content: ""; }.route-step { position: relative; }.route-step::after { position: absolute; left: 13px; width: 8px; height: 8px; border: 2px solid #8bb53b; border-radius: 50%; background: #fbfcfa; content: ""; }.route-step:hover::after { background: var(--lime); }.route-index { position: relative; z-index: 1; }
+
+.next-evidence { position: relative; z-index: 1; display: flex; align-items: center; gap: 6px; margin: 12px 0 0; color: #a5baaf; font: 500 9px var(--mono); letter-spacing: .08em; }.next-evidence i { width: 7px; height: 7px; border: 1px solid var(--lime); border-radius: 50%; box-shadow: 0 0 0 3px rgba(199,243,107,.08); }.next-action-panel h3 { margin-top: 13px; }
+
+.domain-marker { display: grid; justify-items: end; gap: 3px; }.domain-marker span { color: #6b7d79; font: 500 8px var(--mono); letter-spacing: .07em; }.domain-marker span:last-child { color: #4f6960; }.domain-card { position: relative; overflow: hidden; }.domain-card::after { position: absolute; right: 12px; bottom: 13px; width: 29px; height: 12px; border-top: 1px dashed currentColor; border-right: 1px dashed currentColor; opacity: .3; content: ""; }.domain-card footer { position: relative; z-index: 1; }
+
+@media (max-width: 620px) { .brand-coordinate { display: none; }.study-route::before { left: 12px; }.route-step::after { left: 8px; }.next-evidence { font-size: 8px; } }

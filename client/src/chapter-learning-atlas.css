@@ -1,0 +1,58 @@
+/**
+ * Atlas de Incidentes — reforço cartográfico para a trilha aprofundada.
+ * Retículo, rota, setores e instrumentos distinguem leitura de evidência, decisão e progresso validado.
+ */
+
+.chapter-program-header { flex-wrap: wrap; }
+.chapter-brand-instrument { display: grid; grid-template-columns: 29px auto; column-gap: 8px; align-items: center; min-width: 172px; }
+.chapter-brand-instrument > div { display: grid; gap: 2px; }
+.chapter-brand-instrument span, .chapter-brand-instrument em { color: #4a6876; font: 600 8px var(--mono); font-style: normal; letter-spacing: .1em; }
+.chapter-brand-instrument strong { color: #1c3540; font: 700 12px var(--display); letter-spacing: -.03em; }
+.chapter-brand-instrument em { grid-column: 2; color: #748987; }
+.chapter-reticle { position: relative; display: grid; grid-row: 1 / span 2; width: 29px; height: 29px; place-items: center; border: 1px solid #477e98; border-radius: 50%; }
+.chapter-reticle::before, .chapter-reticle::after { position: absolute; background: #477e98; content: ""; }
+.chapter-reticle::before { width: 38px; height: 1px; }
+.chapter-reticle::after { width: 1px; height: 38px; }
+.chapter-reticle i { width: 6px; height: 6px; border-radius: 50%; background: #c7f36b; box-shadow: 0 0 0 3px #e8f3d3; }
+.chapter-program-intro { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 28px 36px; overflow: hidden; }
+.chapter-program-intro::after { position: absolute; right: 0; bottom: 8px; left: 0; height: 15px; border-top: 1px dashed #9bb1a8; background: radial-gradient(circle at 0 0, #4d839f 0 3px, transparent 3.5px), radial-gradient(circle at 32% 0, #4d839f 0 3px, transparent 3.5px), radial-gradient(circle at 68% 0, #c7f36b 0 3px, transparent 3.5px), radial-gradient(circle at 100% 0, #4d839f 0 3px, transparent 3.5px); background-repeat: no-repeat; content: ""; pointer-events: none; }
+.program-intro-metrics svg { color: #3f85a4; }
+.route-instruments { display: flex; grid-column: 1 / -1; flex-wrap: wrap; gap: 8px 18px; padding-bottom: 13px; color: #617673; font: 600 9px var(--mono); letter-spacing: .08em; }
+.route-instruments span { display: inline-flex; gap: 6px; align-items: center; }
+.route-instruments b { color: #3d7793; font-weight: 600; }
+.route-instruments span:last-child b { color: #6b9023; }
+.chapter-program-layout { position: relative; }
+.chapter-program-layout::before { position: absolute; top: 33px; bottom: 30px; left: calc(25% - 12px); width: 1px; border-left: 1px dashed #a7bbb2; content: ""; }
+.chapter-path { z-index: 1; }
+.chapter-path-head span, .path-unit-title i { color: #397896; }
+.path-lesson:hover { background: #e8f0f4; }
+.path-lesson.active { border-left-color: #3f85a4; background: #e7f3f8; color: #254957; }
+.path-lesson > span { color: #3e809d; }
+.path-lesson svg { color: #6b9820; }
+.lesson-deep-reader { position: relative; }
+.lesson-deep-reader::before { position: absolute; top: 16px; right: 17px; color: #8da29a; content: "NODE 01 // EVIDENCE ROUTE"; font: 600 8px var(--mono); letter-spacing: .08em; }
+.lesson-bridge { border-left-color: #3c89aa; background: #edf7fb; }
+.lesson-bridge svg { color: #367c9b; }
+.topic-tabs button:hover { border-color: #80aac0; }
+.topic-tabs button.active { border-color: #3c86a6; background: #e7f3f8; color: #285467; }
+.topic-terms b { color: #2c5d72; }
+.block-exam { border-left-color: #d4a846; background: #fff5d9; }
+.block-exam .learning-block-label { color: #996e15; }
+.learning-practice { border-top-color: #3e89a9; background: #edf7fb; }
+.learning-practice header span { color: #2d7491; }
+.learning-practice .button-primary { background: #c7f36b; color: #20322a; }
+.learning-practice .button-primary:disabled { background: #dbe6e0; color: #778780; }
+.complete-topic.done { border-color: #75a027; background: #e9f4d3; color: #42611a; }
+
+@media (max-width: 980px) {
+  .chapter-program-layout::before { display: none; }
+  .chapter-program-intro { align-items: start; grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .chapter-brand-instrument { order: -1; }
+  .route-instruments { gap: 7px; padding-bottom: 11px; }
+  .route-instruments span { width: 100%; }
+  .lesson-deep-reader::before { top: 11px; right: 13px; font-size: 7px; }
+  .lesson-deep-meta { padding-top: 12px; }
+}

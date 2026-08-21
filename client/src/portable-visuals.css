@@ -1,0 +1,43 @@
+/**
+ * Atlas de Incidentes — visuais portáveis para ZIP e hospedagem estática.
+ * Diagramas cartográficos em CSS substituem imagens externas sem diluir a identidade SOC.
+ */
+
+.app-mark svg { color: var(--lime); }
+
+.briefing-hero {
+  background-color: #152230;
+  background-image:
+    radial-gradient(circle at 77% 28%, rgba(114, 182, 228, .20) 0 2px, transparent 3px),
+    radial-gradient(circle at 84% 66%, rgba(199, 243, 107, .25) 0 3px, transparent 4px),
+    linear-gradient(122deg, transparent 0 57%, rgba(199, 243, 107, .08) 57.1% 57.3%, transparent 57.4%),
+    linear-gradient(30deg, rgba(255, 255, 255, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px);
+  background-size: auto, auto, auto, 28px 28px, 28px 28px;
+}
+
+.intelligence-card {
+  background-color: #132330;
+  background-image:
+    radial-gradient(circle at 83% 71%, rgba(199, 243, 107, .44) 0 3px, transparent 4px),
+    radial-gradient(circle at 68% 27%, rgba(114, 182, 228, .32) 0 2px, transparent 3px),
+    linear-gradient(141deg, transparent 0 50%, rgba(199, 243, 107, .13) 50.2% 50.5%, transparent 50.7%),
+    linear-gradient(0deg, rgba(255, 255, 255, .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
+  background-size: auto, auto, auto, 32px 32px, 32px 32px;
+}
+
+.lab-hero-strip {
+  background-color: #162330;
+  background-image:
+    radial-gradient(circle at 78% 32%, rgba(238, 128, 105, .27) 0 3px, transparent 4px),
+    radial-gradient(circle at 72% 69%, rgba(199, 243, 107, .28) 0 2px, transparent 3px),
+    linear-gradient(126deg, transparent 0 50%, rgba(199, 243, 107, .12) 50.3% 50.6%, transparent 50.8%),
+    linear-gradient(30deg, rgba(255, 255, 255, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+  background-size: auto, auto, auto, 34px 34px, 34px 34px;
+}
+
+.briefing-hero::after,
+.intelligence-card::after,
+.lab-hero-strip::after { isolation: isolate; }
